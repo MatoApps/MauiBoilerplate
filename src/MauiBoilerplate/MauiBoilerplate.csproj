@@ -86,14 +86,17 @@
 	<ItemGroup>
 	  <PackageReference Include="Abp.AutoMapper" Version="7.2.1" />
 	  <PackageReference Include="Abp.Castle.Log4Net" Version="7.2.1" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-rc3" />
-	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.0.0-rc3" />
-	  <PackageReference Include="CommunityToolkit.Maui.Markup" Version="1.0.0-rc3" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <ProjectReference Include="..\MauiBoilerplate.Core\MauiBoilerplate.Core.csproj" />
 	  <ProjectReference Include="..\MauiBoilerplate.EntityFrameworkCore\MauiBoilerplate.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\MusicItemPage.xaml.cs">
+	    <DependentUpon>MusicItemPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -103,23 +106,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Controls\MenuCell.xaml.cs">
-	    <DependentUpon>MenuCell.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\HomePage.xaml.cs">
-	    <DependentUpon>HomePage.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Controls\MenuCell.xaml">
-	    <SubType>Designer</SubType>
+	  <MauiXaml Update="Views\MusicItemPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\MainPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

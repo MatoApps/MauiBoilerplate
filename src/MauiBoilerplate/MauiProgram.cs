@@ -3,7 +3,6 @@ using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using MauiBoilerplate.Core;
-using CommunityToolkit.Maui;
 
 namespace MauiBoilerplate
 {
@@ -14,7 +13,6 @@ namespace MauiBoilerplate
 			var builder = MauiApp.CreateBuilder();
 			builder
 				.UseMauiApp<App>()
-				.UseMauiCommunityToolkit()
 				.ConfigureFonts(fonts =>
 				{
 					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

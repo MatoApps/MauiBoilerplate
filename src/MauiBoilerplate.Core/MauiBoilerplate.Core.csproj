@@ -45,7 +45,6 @@
 	  <PackageReference Include="Abp.AutoMapper" Version="7.2.1" />
 	  <PackageReference Include="Abp.Castle.Log4Net" Version="7.2.1" />
 	  <PackageReference Include="Castle.Windsor.MsDependencyInjection" Version="3.4.0" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="1.0.0-rc3" />
 	  <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
 	</ItemGroup>
 
